@@ -1,0 +1,17 @@
+{
+  "name": "profile-generator",
+  "version": "1.0.0",
+  "description": "A cli generator for team profiles",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "author": "beau baggett",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
