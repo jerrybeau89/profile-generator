@@ -5,6 +5,8 @@ This is a repository that will contain code that is used to create an employee p
 ## Description
 Profile generator is an application that will accept a users input on the CLI, allow the user to pick between employee types, and use the provided information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
 
+https://github.com/jerrybeau89/profile-generator
+
 
  ## Table of Contents
   
@@ -49,7 +51,7 @@ SOFTWARE.
 npm test
 
 ## Video
-Here is a video of the program being used: 
+Here is a video of the program being used: https://drive.google.com/file/d/1Kc495oclTBafVxQJxUC0MpVz0QdfsPRZ/view
 ## Questions
 
   Please contact me at jerrybeau89@gmail.com with any questions you may have. You can also find my GitHub at https://github.com/jerrybeau89. Thank you! 
