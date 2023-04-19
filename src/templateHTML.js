@@ -1,6 +1,7 @@
 const createTeam = team => {
 
-    const createManager = manager => {
+  // function to add the manager info to an html template 
+  const createManager = manager => {
       return `
       <div class="card col-lg-3 m-2 shadow">
               <h1 class="card-header bg-info">${manager.getName()}</h1>
@@ -12,7 +13,7 @@ const createTeam = team => {
           </ul>
       </div>`;
   };
-
+  // function to add the engineer info to an html template
   const createEngineer = engineer => {
       return `
       <div class="card col-lg-3 m-2 shadow">
@@ -25,7 +26,7 @@ const createTeam = team => {
           </ul>
       </div>`;
   };
-
+   // function to add the intern info to an html template
   const createIntern = intern => {
       return `
       <div class="card col-lg-3 m-2 shadow">
@@ -41,6 +42,7 @@ const createTeam = team => {
 
   const html = [];
 
+  // takes the data supplied by the createTeam function and checks which role, depending on the role, it calls one of the create functions to initiate the build of the html based on the mapped information provided
   html.push(team
       .filter(employee => employee.getRole() === "Manager")
       .map(manager => createManager(manager))

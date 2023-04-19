@@ -7,6 +7,7 @@ const createTeam  = require('./src/templateHTML');
 
 let team = [];
 
+// used to add a new teammate, if query answer is no, it inits the writeToFile func. 
 const addTeamMate = () => {
   inquirer.prompt([
       {
@@ -25,6 +26,7 @@ const addTeamMate = () => {
   )
 };
 
+// used to determine employee type, if query answer is cancel, it inits the writeToFile func. 
 const employeeType = () => {
     inquirer.prompt([
         {
@@ -46,6 +48,7 @@ const employeeType = () => {
     )
 };
 
+// prompts questions for adding an engineer
 const addEngineer = () => {;
     inquirer.prompt([
       {
@@ -103,6 +106,7 @@ const addEngineer = () => {;
     })
 };
 
+// prompts questions for adding an intern
 const addIntern = () => {;
     inquirer.prompt([
       {
@@ -160,6 +164,7 @@ const addIntern = () => {;
     })
 };
 
+// prompts questions for adding a manager
 const addManager = () => {;
     inquirer.prompt([
       {
@@ -217,12 +222,13 @@ const addManager = () => {;
     })
 };
 
+// writes data to a html file
 const writeToFile = (fileName, data) => {
-
   fs.writeFile(`${fileName}`, data, (err) =>
       err ? console.error('Error! : ' + err) : console.log('Your HTML has been successfully generated!'))
 }
 
+// initializes the program
 function init() {
     addManager();
 };
